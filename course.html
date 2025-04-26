@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enroll in Resell Mastery Course</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-green-500 p-6 text-white text-center">
+    <h1 class="text-4xl font-bold">Enroll in Resell Mastery</h1>
+    <p class="mt-2 text-lg">Unlock your path to profit today!</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow p-10 text-center space-y-16">
+
+    <!-- What You Get -->
+    <section>
+      <h2 class="text-2xl font-bold mb-4">What You Get:</h2>
+      <ul class="list-disc list-inside max-w-xl mx-auto text-left mb-8">
+        <li>Step-by-step reselling guide</li>
+        <li>How to find profitable items</li>
+        <li>Pricing strategies to maximize profit</li>
+        <li>Access to private tips & tricks</li>
+      </ul>
+      <h3 class="text-xl font-bold mb-2">Course Price: $19</h3>
+
+      <!-- PayPal Button -->
+      <div class="flex justify-center mt-6">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="philip_yu@icloud.com"> <!-- CHANGE THIS -->
+          <input type="hidden" name="item_name" value="Resell Mastery Course Access">
+          <input type="hidden" name="amount" value="19.00">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="submit" value="Buy Now" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full cursor-pointer transition duration-300">
+        </form>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+      <h2 class="text-2xl font-bold mb-8">Success Stories</h2>
+      <div class="max-w-4xl mx-auto grid gap-8 md:grid-cols-2">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <p>"I made my first $500 within two weeks after taking this course. It's so easy to follow!"</p>
+          <p class="mt-4 font-bold">- Alex P.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <p>"I finally started a side hustle that actually makes real money. Highly recommend!"</p>
+          <p class="mt-4 font-bold">- Jamie L.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+      <h2 class="text-2xl font-bold mb-8">Frequently Asked Questions</h2>
+      <div class="max-w-2xl mx-auto text-left space-y-6">
+        <div>
+          <h3 class="font-bold">Do I need experience to start?</h3>
+          <p>Nope! This course is beginner-friendly and shows you step-by-step.</p>
+        </div>
+        <div>
+          <h3 class="font-bold">How long until I make money?</h3>
+          <p>Most students see their first profits within the first month with effort.</p>
+        </div>
+        <div>
+          <h3 class="font-bold">Is there a refund policy?</h3>
+          <p>Yes! We offer a 30-day money-back guarantee if you're not satisfied.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="bg-green-500 text-white p-10 rounded-lg max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Ready to Start Your Reselling Journey?</h2>
+      <a href="#"
+        onclick="document.querySelector('form').submit(); return false;"
+        class="bg-white text-green-500 font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-gray-200">
+        Enroll Now
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-6 text-center">
+    <p>© 2025 Resell Mastery. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
