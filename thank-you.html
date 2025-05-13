@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+      color: #f5f5f5;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      animation: fadeIn 1.2s ease;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      animation: slideIn 1s ease forwards;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      animation: slideIn 1.3s ease forwards;
+    }
+
+    a {
+      display: inline-block;
+      background-color: #10b981;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      animation: slideIn 1.6s ease forwards;
+    }
+
+    a:hover {
+      background-color: #059669;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Thank You for Your Purchase!</h1>
+  <p>Your Resellico PDF guide is ready:</p>
+  <a href="https://reseller-website-five.vercel.app/ResellicoGuide.pdf" download>
+    Click here to download
+  </a>
+</body>
+</html>

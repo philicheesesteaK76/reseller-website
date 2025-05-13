@@ -62,14 +62,15 @@
       <h3 class="text-xl font-bold mb-2 text-green-300">Course Price: $19</h3>
       <p class="mb-6 text-gray-400">One-time payment, instant access</p>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_xclick" />
-        <input type="hidden" name="business" value="zikunyu@icloud.com" />
-        <input type="hidden" name="item_name" value="Resellico Reselling Course" />
-        <input type="hidden" name="amount" value="19.00" />
-        <input type="hidden" name="currency_code" value="USD" />
-        <input type="submit" value="Buy Now for $19"
-          class="bg-green-500 hover:bg-green-400 text-white font-bold py-3 px-8 rounded-full shadow transition transform hover:scale-105 cursor-pointer">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="yourpaypal@email.com">
+        <input type="hidden" name="item_name" value="Resellico Dropshipping Guide">
+        <input type="hidden" name="amount" value="19.00">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="return" value="https://reseller-website-five.vercel.app/thank-you.html"> <!-- Redirect after payment -->
+        <input type="submit" value="Buy Now">
       </form>
+      
     </section>
 
     <section data-animate-on-scroll class="opacity-0 max-w-4xl mx-auto">
