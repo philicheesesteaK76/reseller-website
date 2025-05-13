@@ -1,56 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Resell Mastery - Learn to Flip Items for Profit</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resellico</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'media',
+      theme: {
+        extend: {
+          animation: {
+            fade: 'fadeIn 2s ease-out',
+            bounceOnce: 'bounce 0.8s ease-in-out 1'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 }
+            }
+          }
+        }
+      }
+    };
+  </script>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col font-sans">
 
   <!-- Header -->
-  <header class="bg-green-500 p-6 text-white text-center">
-    <h1 class="text-4xl font-bold">Resell Mastery</h1>
-    <p class="mt-2 text-lg">Learn how to resell and build your income!</p>
+  <header class="bg-gray-800 p-6 text-center shadow-lg animate-fade">
+    <a href="index.html">
+      <h1 class="text-4xl font-bold text-green-400">Resellico</h1>
+    </a>    
+    <p class="mt-2 text-lg text-gray-300">Flip items. Flip your future.</p>
   </header>
 
   <!-- Hero Section -->
-  <section class="p-10 text-center">
-    <h2 class="text-3xl font-bold mb-4">Start Making Extra Money Today!</h2>
-    <p class="mb-6 max-w-xl mx-auto">Discover the proven system to resell everyday items — no experience needed. Our course walks you through sourcing, pricing, listing, and selling for maximum profit.</p>
-    <a href="course.html" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">
-      View the Course
-    </a>
-  </section>
-
-  <!-- Benefits Section -->
-  <section class="bg-white p-10">
-    <h2 class="text-2xl font-bold text-center mb-6">Why Start Reselling?</h2>
-    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div>✔️ No big investment needed</div>
-      <div>✔️ Work from anywhere</div>
-      <div>✔️ Earn extra cash</div>
-      <div>✔️ Turn everyday finds into profit</div>
+  <section class="flex-grow flex items-center justify-center text-center px-6 py-20 animate-fade">
+    <div class="max-w-2xl">
+      <h2 class="text-3xl md:text-5xl font-extrabold mb-6 text-white">Learn to Resell and Build Your Income</h2>
+      <p class="text-lg text-gray-400 mb-8">Resellico teaches you how to turn everyday items into real money — no experience needed.</p>
+      <a href="course.html" class="bg-green-500 hover:bg-green-400 text-white font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105 animate-bounceOnce">
+        View the Course
+      </a>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="p-10 text-center">
-    <h2 class="text-2xl font-bold mb-4">About the Creator</h2>
-    <p class="max-w-xl mx-auto">I'm Andrew, a full-time reseller who started with just $100 and turned it into a thriving business. I built this course to help you skip the guesswork and start succeeding faster.</p>
+  <!-- Benefits Section -->
+  <section class="bg-gray-800 py-16 px-6 animate-fade">
+    <h2 class="text-2xl font-bold text-center text-green-300 mb-10">Why Reselling with Resellico?</h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
+      <div class="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700">
+        <h3 class="text-lg font-semibold text-white mb-2">🛠️ Low Startup Cost</h3>
+        <p class="text-gray-400">Get started with just a few dollars and scale up as you go.</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700">
+        <h3 class="text-lg font-semibold text-white mb-2">🌍 Flexible Freedom</h3>
+        <p class="text-gray-400">Work from home or on the go — it's your hustle, your terms.</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700">
+        <h3 class="text-lg font-semibold text-white mb-2">💰 Real Profit Potential</h3>
+        <p class="text-gray-400">Flip undervalued items and earn consistently.</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700">
+        <h3 class="text-lg font-semibold text-white mb-2">📈 Simple, Proven System</h3>
+        <p class="text-gray-400">No fluff. Just clear steps from finding items to final sale.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Call to Action -->
-  <section class="bg-green-500 text-white p-10 text-center">
-    <h2 class="text-3xl font-bold mb-4">Ready to Start Reselling?</h2>
-    <a href="course.html" class="bg-white text-green-500 font-bold py-3 px-6 rounded-full transition duration-300 hover:bg-gray-200">
-      Join the Course
+  <section class="text-center py-20 px-6 animate-fade">
+    <h2 class="text-3xl font-bold mb-6 text-green-400">Join Resellico and Start Flipping Today</h2>
+    <p class="text-gray-400 mb-8">Don’t wait — thousands are already turning junk into jackpots. You can too.</p>
+    <a href="course.html" class="bg-green-500 hover:bg-green-400 text-white font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105">
+      Get Started
     </a>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white p-6 text-center mt-10">
-    <p>© 2025 Resell Mastery. All rights reserved.</p>
+  <footer class="bg-gray-800 text-gray-400 p-6 text-center">
+    <p>© 2025 Resellico. Built for hustlers, by hustlers.</p>
   </footer>
 
 </body>
